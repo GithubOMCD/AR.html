@@ -13,7 +13,7 @@ model-viewer{
 	shadow-intensity = 0
 }
 .custom-ar-button{
-	  font-size: 24px;
+	  font-size: 3rem;
       position: absolute;
       bottom: 16px;
       left: 16px;
