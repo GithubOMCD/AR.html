@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>model-viewer demo</title>
+  <link href="AR/AR.css" rel="stylesheet" type="text/css">
+	  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
   </head>
   <body>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <model-viewer 
 	ar
+	ar-modes="webxr scene-viewer quick-look"
 	src="sukimamoriAR.glb"
 	ios-src="sukimamoriAR.usdz"
-				  
-	style="width:800px;height:1000px;"                  
-
-    background-color="#70BCD1"
-    shadow-intensity="0.7"
-    camera-controls
-    interaction-prompt="auto"
-    auto-rotate ar magic-leap>
+	poster="sukimamori.jpg"
+	camera-controls
+>
+	<button id="custom-ar-button" slot="ar-button" ></button>
 	</model-viewer>
   </body>
 </html>
